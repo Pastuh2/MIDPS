@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="501.0" prefWidth="501.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.learning.Chronometer.Controller">
+   <children>
+      <ImageView layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/Dropbox/Workspace/Eclipse/Chronometer/image/chronometer.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="markArrow" fitHeight="188.0" fitWidth="21.0" layoutX="240.0" layoutY="212.0" pickOnBounds="true" preserveRatio="true" rotate="0.0">
+         <image>
+            <Image url="file:/D:/Dropbox/Workspace/Eclipse/Chronometer/image/markArrow.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="333.0" layoutY="102.0" mnemonicParsing="false" onMousePressed="#onResetButtonPressed" onMouseReleased="#onResetButtonReleased" prefHeight="29.0" prefWidth="52.0" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Dropbox/Workspace/Eclipse/Chronometer/image/resetButtonStateReleased.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+      </Button>
+      <Button layoutX="225.0" layoutY="59.0" mnemonicParsing="false" onMousePressed="#onStartButtonPressed" onMouseReleased="#onStartButtonReleased" text="Button">
+         <effect>
+            <ImageInput>
+               <source>
+                  <Image url="file:/D:/Dropbox/Workspace/Eclipse/Chronometer/image/startButtonStateReleased.jpg" />
+               </source>
+            </ImageInput>
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </Button>
+      <ImageView fx:id="startButtonImage" layoutX="227.0" layoutY="59.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/Dropbox/Workspace/Eclipse/Chronometer/image/startButtonStateClicked.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="resetButtonImage" layoutX="333.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="file:/D:/Dropbox/Workspace/Eclipse/Chronometer/image/resetButtonStateClicked.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="mainArrow" layoutX="241.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/Dropbox/Workspace/Eclipse/Chronometer/image/mainArrow.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id = "minuteArrow" layoutX="249.0" layoutY="159.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="file:/D:/Dropbox/Workspace/Eclipse/Chronometer/image/minuteArrow.png" />
+         </image>
+      </ImageView>
+   </children>
+</Pane>
